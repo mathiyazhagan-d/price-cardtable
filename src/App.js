@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Grid } from "@mui/material";
+import CardDetails from "./component/CardDetails";
+
+let dataCard = [
+  { pack: "FREE", price: 0, user: "Single User", storage: "5GB Storage" },
+  {
+    pack: "PLUS",
+    price: 9,
+    user: "5 Users",
+    storage: "50GB Storage",
+  },
+  {
+    pack: "FREE",
+    price: 49,
+    user: "Unlimited Users",
+    storage: "150GB Storage",
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Box color="primary">
+        <Grid container color="primary" justifyContent="space-evenly">
+          {dataCard.map((e) => (
+            <CardDetails name={e} />
+          ))}
+        </Grid>
+      </Box>
+    </>
   );
 }
 
