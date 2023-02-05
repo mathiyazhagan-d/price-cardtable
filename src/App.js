@@ -22,8 +22,8 @@ function App() {
     <>
       <Box color="primary">
         <Grid container color="primary" justifyContent="space-evenly">
-          {dataCard.map((e) => (
-            <CardDetails name={e} />
+          {dataCard.map((e,index) => (
+            <CardDetails key={index} name={e} />
           ))}
         </Grid>
       </Box>
