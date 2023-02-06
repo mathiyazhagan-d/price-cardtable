@@ -1,4 +1,11 @@
-import { Button, Card, CardActionArea, Grid, Typography } from "@mui/material";
+import {
+  Button,
+  Card,
+  CardActionArea,
+  Grid,
+  styled,
+  Typography,
+} from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import CheckIcon from "@mui/icons-material/Check";
@@ -13,9 +20,15 @@ const CardDetails = ({ name }) => {
     "Free Subdomain",
     "Monthly Status Reports",
   ];
+  let styles = {
+    "&:hover": {
+      marginTop: "-12px",
+      marginBottom: "12px",
+    },
+  };
   return (
     <>
-      <Grid xs={12} md={6} lg={4}>
+      <Grid sx={styles} xs={12} md={6} lg={4}>
         <Box style={{ margin: "30px" }}>
           <CardActionArea>
             <Card
