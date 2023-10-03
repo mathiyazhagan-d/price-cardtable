@@ -16,14 +16,14 @@ let dataCard = [
     storage: "150GB Storage",
   },
   {
-    pack: "FREE",
-    price: 49,
+    pack: "rect",
+    price: 9,
     user: "Unlimited Users",
     storage: "150GB Storage",
   },
   {
-    pack: "FREE",
-    price: 49,
+    pack: "FEE",
+    price: 4,
     user: "Unlimited Users",
     storage: "150GB Storage",
   },
