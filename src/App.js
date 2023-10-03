@@ -15,18 +15,7 @@ let dataCard = [
     user: "Unlimited Users",
     storage: "150GB Storage",
   },
-  {
-    pack: "rect",
-    price: 9,
-    user: "Unlimited Users",
-    storage: "150GB Storage",
-  },
-  {
-    pack: "FEE",
-    price: 4,
-    user: "Unlimited Users",
-    storage: "150GB Storage",
-  },
+ 
 ];
 
 function App() {
